@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.875, 8.5" name="Diagram_uml">
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.75, 8.5" name="Diagram_uml">
   <useCaseModelRootMoniker Id="9c226b9e-73e8-4217-91a2-64aa64ae6530" />
   <nestedChildShapes>
     <actorShape Id="25d29150-f8df-4b18-9e5d-c53922521d77" absoluteBounds="1.125, 1.125, 0.5, 0.5" isReference="false" heightOffset="0">
@@ -22,15 +22,27 @@
         <actorShapeMoniker Id="fc916215-fc04-4147-81c3-1bbaec8617ba" />
       </nodes>
     </useCaseDependencyConnector>
-    <SubsystemShape Id="ec68b5fc-89e9-40e8-a14e-32f3b683cfe6" absoluteBounds="8.25, 0.5, 7.375, 6.25" customColor="White">
+    <actorShape Id="d0122574-99c9-42b7-9e45-46fc86ba997e" absoluteBounds="9.375, 5.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="83149868-f43a-405b-895e-0de15fb9e7f6" LastKnownName="Commis" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="b540742a-9037-4975-bcd3-bbe26446928f" absoluteBounds="11.5, 5.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="5697e93d-6862-47fb-8080-e0e9ee0db57a" LastKnownName="Établir liste des retards" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(9.875 : 5.65131578947368); (11.5107251075066 : 5.82349737973754)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="d6bd5565-194c-4085-ade9-bdc42c0b4ade" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="d0122574-99c9-42b7-9e45-46fc86ba997e" />
+        <useCaseShapeMoniker Id="b540742a-9037-4975-bcd3-bbe26446928f" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <SubsystemShape Id="ec68b5fc-89e9-40e8-a14e-32f3b683cfe6" absoluteBounds="8.25, 0.5, 6.25, 4.125" customColor="White">
       <subsystemMoniker Id="68f3222a-328a-41ce-8bd6-d06887d405c9" LastKnownName="Bibliotheque emprunts" />
       <nestedChildShapes>
         <useCaseShape Id="921716d0-6c55-451a-8a47-47322064636f" absoluteBounds="8.625, 1, 1.375, 0.875" customColor="238, 237, 131" heightOffset="0">
           <useCaseMoniker Id="72d9a194-dba3-4282-a6d8-a2a16e367fc8" LastKnownName="Prêter un livre" />
-          <relativeChildShapes />
-        </useCaseShape>
-        <useCaseShape Id="450a1b5a-acdb-442e-938b-9d926cfdcd5f" absoluteBounds="10.75, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-          <useCaseMoniker Id="95974592-f9d6-4120-bf33-555136441ab6" LastKnownName="Vérifier retards" />
           <relativeChildShapes />
         </useCaseShape>
         <useCaseShape Id="dd59e59f-fb87-46c9-ad42-d0e985d8e02e" absoluteBounds="11.375, 1.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
@@ -45,13 +57,13 @@
           <useCaseMoniker Id="84a7229b-f8d4-42f2-880b-0caa4735272d" LastKnownName="Enregistrer retours" />
           <relativeChildShapes />
         </useCaseShape>
-        <useCaseShape Id="ac60085e-eb4b-4796-bd83-a19299586a53" absoluteBounds="12.125, 3.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+        <useCaseShape Id="ac60085e-eb4b-4796-bd83-a19299586a53" absoluteBounds="10.375, 2.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
           <useCaseMoniker Id="738ddbde-9926-45ca-b014-fe3b73a6d45a" LastKnownName="Établir liste des retards" />
           <relativeChildShapes />
         </useCaseShape>
       </nestedChildShapes>
     </SubsystemShape>
-    <useCaseDependencyConnector edgePoints="[(7.25 : 1.28071609325809); (8.25 : 1.40358046629043)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black">
+    <useCaseDependencyConnector edgePoints="[(7.25 : 1.21927262155034); (8.25 : 1.09636310775168)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black">
       <dependencyMoniker Id="f3f8512e-2b9f-4ec5-b9b6-6913038641fb" />
       <relativeChildShapes />
       <nodes>
@@ -59,14 +71,6 @@
         <SubsystemShapeMoniker Id="ec68b5fc-89e9-40e8-a14e-32f3b683cfe6" />
       </nodes>
     </useCaseDependencyConnector>
-    <extendConnector edgePoints="[(9.78321437989403 : 1.75637103154112); (10.9530738515814 : 2.54885648010356)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«étendre»">
-      <extendMoniker Id="8fea1b3d-9028-4ae5-b25e-8955b2560952" />
-      <relativeChildShapes />
-      <nodes>
-        <useCaseShapeMoniker Id="921716d0-6c55-451a-8a47-47322064636f" />
-        <useCaseShapeMoniker Id="450a1b5a-acdb-442e-938b-9d926cfdcd5f" />
-      </nodes>
-    </extendConnector>
     <extendConnector edgePoints="[(9.99949558717314 : 1.42074401006895); (11.3755938244376 : 1.38718063842835)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«étendre»">
       <extendMoniker Id="6c392aa9-2966-4407-953d-0219b1178fcd" />
       <relativeChildShapes />
@@ -83,6 +87,14 @@
         <useCaseShapeMoniker Id="a6ffb5a3-0e66-43e6-9c1e-5f9b831d9298" />
       </nodes>
     </includeConnector>
+    <extendConnector edgePoints="[(9.70359940257631 : 1.7973114503702); (10.6362433397901 : 2.65534387260686)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«étendre»">
+      <extendMoniker Id="6a438952-a8b5-465c-a549-160876177ff5" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="921716d0-6c55-451a-8a47-47322064636f" />
+        <useCaseShapeMoniker Id="ac60085e-eb4b-4796-bd83-a19299586a53" />
+      </nodes>
+    </extendConnector>
     <SubsystemShape Id="f08432bd-9ec1-4945-ae1a-18bf3dc1c250" absoluteBounds="5, 2.875, 3, 3.25" customColor="White">
       <subsystemMoniker Id="a52f5369-246d-4fc2-8d9b-a9f6f5178cf8" LastKnownName="Bibliotheque réservations" />
       <nestedChildShapes>

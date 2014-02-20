@@ -55,23 +55,15 @@
       <useCase Id="72d9a194-dba3-4282-a6d8-a2a16e367fc8" name="Prêter un livre" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f24f49af-2ab7-44d0-b639-38c97b29a16f" />
         <extendedCases>
-          <extend Id="8fea1b3d-9028-4ae5-b25e-8955b2560952">
-            <useCaseMoniker Id="95974592-f9d6-4120-bf33-555136441ab6" LastKnownName="Vérifier retards" />
-            <elementDefinition Id="25791ab4-d152-446c-b34b-4ae68ee7f191" />
-          </extend>
           <extend Id="6c392aa9-2966-4407-953d-0219b1178fcd">
             <useCaseMoniker Id="61e9cb88-c5a2-4672-9768-d25c3b8dc8db" LastKnownName="Vérifier adhérents" />
             <elementDefinition Id="b4061a6b-6069-4dd7-bf28-e422e48892e5" />
           </extend>
+          <extend Id="6a438952-a8b5-465c-a549-160876177ff5">
+            <useCaseMoniker Id="738ddbde-9926-45ca-b014-fe3b73a6d45a" LastKnownName="Établir liste des retards" />
+            <elementDefinition Id="549e1dbd-7a2a-4bdf-9b4c-41a492e078dc" />
+          </extend>
         </extendedCases>
-        <subjects>
-          <subsystemMoniker Id="68f3222a-328a-41ce-8bd6-d06887d405c9" LastKnownName="Bibliotheque emprunts" />
-        </subjects>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase Id="95974592-f9d6-4120-bf33-555136441ab6" name="Vérifier retards" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="505e3f17-4584-4ad0-88f1-7bb1f875b76e" />
         <subjects>
           <subsystemMoniker Id="68f3222a-328a-41ce-8bd6-d06887d405c9" LastKnownName="Bibliotheque emprunts" />
         </subjects>
@@ -156,6 +148,22 @@
         </subjects>
       </useCase>
     </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="83149868-f43a-405b-895e-0de15fb9e7f6" name="Commis" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb303135-dc38-4ca6-b017-ce85ff03a2dd" />
+        <suppliersInternal>
+          <dependency Id="d6bd5565-194c-4085-ade9-bdc42c0b4ade">
+            <useCaseMoniker Id="5697e93d-6862-47fb-8080-e0e9ee0db57a" LastKnownName="Établir liste des retards" />
+            <elementDefinition Id="41fc33ab-5066-422b-9d63-ea9d2f5684fa" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5697e93d-6862-47fb-8080-e0e9ee0db57a" name="Établir liste des retards" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="530300dd-3623-4318-8786-d11157701ad3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="34f841d0-d4ac-4649-bc0b-ad1acfb1c7e7" name="Tp1modelisation">
     <elementDefinition Id="814f1908-3fa3-4dea-bf30-0ad70ba661ba" />

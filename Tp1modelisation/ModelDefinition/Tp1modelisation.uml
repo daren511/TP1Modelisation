@@ -94,6 +94,13 @@
               LastKnownName="Vérifier adhérents"
               LastKnownLocation="Tp1modelisation.uml" />
           </extend>
+          <extend
+            Id="549e1dbd-7a2a-4bdf-9b4c-41a492e078dc">
+            <useCaseMoniker
+              Id="5a94eb1b-2970-47b0-8ea0-ec9db9bbc58a"
+              LastKnownName="Établir liste des retards"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </extend>
         </extendedCases>
         <subjects>
           <subsystemMoniker
@@ -108,14 +115,7 @@
         Id="505e3f17-4584-4ad0-88f1-7bb1f875b76e"
         name="Vérifier retards"
         isAbstract="false"
-        isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="70778489-357a-4e2d-9d77-600f64af85cf"
-            LastKnownName="Bibliotheque emprunts"
-            LastKnownLocation="Tp1modelisation.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <subsystem
@@ -249,6 +249,30 @@
             LastKnownLocation="Tp1modelisation.uml" />
         </subjects>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="eb303135-dc38-4ca6-b017-ce85ff03a2dd"
+        name="Commis"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="41fc33ab-5066-422b-9d63-ea9d2f5684fa">
+            <useCaseMoniker
+              Id="530300dd-3623-4318-8786-d11157701ad3"
+              LastKnownName="Établir liste des retards"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="530300dd-3623-4318-8786-d11157701ad3"
+        name="Établir liste des retards"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
