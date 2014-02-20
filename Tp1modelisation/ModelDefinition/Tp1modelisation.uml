@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="814f1908-3fa3-4dea-bf30-0ad70ba661ba"
   name="Tp1modelisation" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,258 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="33277335-5bea-43ad-b893-b9adf3b46e55"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="90707a5a-8744-4428-9d94-72c65b1ae70c"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="d995f32e-22fa-432c-a9c3-b3af702361fb">
+            <actorMoniker
+              Id="4628696f-410d-44ae-9122-8f307984760d"
+              LastKnownName="Commis"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </dependency>
+          <dependency
+            Id="6a659885-9729-46ff-b30f-b6fe0897f803">
+            <subsystemMoniker
+              Id="1b9488ef-c3d5-43f7-812c-4c4c75510501"
+              LastKnownName="Bibliotheque réservations"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4628696f-410d-44ae-9122-8f307984760d"
+        name="Commis"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="799ec429-1206-4a5b-8a2d-6a175999ba77">
+            <subsystemMoniker
+              Id="70778489-357a-4e2d-9d77-600f64af85cf"
+              LastKnownName="Bibliotheque emprunts"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="70778489-357a-4e2d-9d77-600f64af85cf"
+        name="Bibliotheque emprunts"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f24f49af-2ab7-44d0-b639-38c97b29a16f"
+        name="Prêter un livre"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="25791ab4-d152-446c-b34b-4ae68ee7f191">
+            <useCaseMoniker
+              Id="505e3f17-4584-4ad0-88f1-7bb1f875b76e"
+              LastKnownName="Vérifier retards"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </extend>
+          <extend
+            Id="b4061a6b-6069-4dd7-bf28-e422e48892e5">
+            <useCaseMoniker
+              Id="3edd365b-8360-4e8c-aefe-69465d9918ab"
+              LastKnownName="Vérifier adhérents"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="70778489-357a-4e2d-9d77-600f64af85cf"
+            LastKnownName="Bibliotheque emprunts"
+            LastKnownLocation="Tp1modelisation.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="505e3f17-4584-4ad0-88f1-7bb1f875b76e"
+        name="Vérifier retards"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="70778489-357a-4e2d-9d77-600f64af85cf"
+            LastKnownName="Bibliotheque emprunts"
+            LastKnownLocation="Tp1modelisation.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="1b9488ef-c3d5-43f7-812c-4c4c75510501"
+        name="Bibliotheque réservations"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="014174d6-02e5-4c24-8431-0be248e4c4e5"
+        name="Consulter registre"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d5245324-bdb9-427d-a7d8-aeb1f24ca069">
+            <useCaseMoniker
+              Id="fd72a9cb-471b-46da-842c-bdac8eee48da"
+              LastKnownName="Réserver"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="1b9488ef-c3d5-43f7-812c-4c4c75510501"
+            LastKnownName="Bibliotheque réservations"
+            LastKnownLocation="Tp1modelisation.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fd72a9cb-471b-46da-842c-bdac8eee48da"
+        name="Réserver"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="9a805091-43fa-4161-b96f-5053987f3565">
+            <useCaseMoniker
+              Id="71271129-b25c-4a88-bdb4-a1a8a4c93cb3"
+              LastKnownName="Connexion"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="1b9488ef-c3d5-43f7-812c-4c4c75510501"
+            LastKnownName="Bibliotheque réservations"
+            LastKnownLocation="Tp1modelisation.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="71271129-b25c-4a88-bdb4-a1a8a4c93cb3"
+        name="Connexion"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="1b9488ef-c3d5-43f7-812c-4c4c75510501"
+            LastKnownName="Bibliotheque réservations"
+            LastKnownLocation="Tp1modelisation.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3edd365b-8360-4e8c-aefe-69465d9918ab"
+        name="Vérifier adhérents"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="5043540f-8f3f-4d19-bbfd-d98ee47dec8d">
+            <useCaseMoniker
+              Id="9e86c91a-b354-47d2-8095-8f840e013b10"
+              LastKnownName="Inscrire"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="70778489-357a-4e2d-9d77-600f64af85cf"
+            LastKnownName="Bibliotheque emprunts"
+            LastKnownLocation="Tp1modelisation.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9e86c91a-b354-47d2-8095-8f840e013b10"
+        name="Inscrire"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="70778489-357a-4e2d-9d77-600f64af85cf"
+            LastKnownName="Bibliotheque emprunts"
+            LastKnownLocation="Tp1modelisation.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="009e0c24-b0ea-46d7-bc1e-d2aeff9ba382"
+        name="Enregistrer retours"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="70778489-357a-4e2d-9d77-600f64af85cf"
+            LastKnownName="Bibliotheque emprunts"
+            LastKnownLocation="Tp1modelisation.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5a94eb1b-2970-47b0-8ea0-ec9db9bbc58a"
+        name="Établir liste des retards"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="70778489-357a-4e2d-9d77-600f64af85cf"
+            LastKnownName="Bibliotheque emprunts"
+            LastKnownLocation="Tp1modelisation.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
