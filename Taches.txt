@@ -1,0 +1,4 @@
+Déterminer les cas d'utilisation du système ~> Charles
+Diagramme de package ~> Daren
+Modèle de réprésentation statique ~> Francis
+Échéancier de l'implémentation ~> Alexis
