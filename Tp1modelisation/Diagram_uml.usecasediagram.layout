@@ -6,15 +6,15 @@
       <actorMoniker Id="65d77a39-852b-4a44-b3d2-7bd9c43567e4" />
       <relativeChildShapes />
     </actorShape>
-    <actorShape Id="ffcc1fd6-8843-41b3-9d7a-d1b510e46115" absoluteBounds="5.75, 1, 0.5, 0.5" isReference="false" heightOffset="0">
+    <actorShape Id="ffcc1fd6-8843-41b3-9d7a-d1b510e46115" absoluteBounds="5.25, 1, 0.5, 0.5" isReference="false" heightOffset="0">
       <actorMoniker Id="a2423a33-66ca-4af7-bca2-b82a19a57000" LastKnownName="Client" />
       <relativeChildShapes />
     </actorShape>
-    <actorShape Id="fc916215-fc04-4147-81c3-1bbaec8617ba" absoluteBounds="7.125, 1, 0.5, 0.5" isReference="false" heightOffset="0">
+    <actorShape Id="fc916215-fc04-4147-81c3-1bbaec8617ba" absoluteBounds="6.75, 1, 0.5, 0.5" isReference="false" heightOffset="0">
       <actorMoniker Id="1e93bffe-e6b0-4ca1-9de2-37dd211cb17f" LastKnownName="Commis" />
       <relativeChildShapes />
     </actorShape>
-    <useCaseDependencyConnector edgePoints="[(6.25 : 1.25); (7.125 : 1.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <useCaseDependencyConnector edgePoints="[(5.75 : 1.25); (6.75 : 1.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
       <dependencyMoniker Id="9a73ea82-8d59-461e-8bcf-b4976502aa91" />
       <relativeChildShapes />
       <nodes>
@@ -51,7 +51,7 @@
         </useCaseShape>
       </nestedChildShapes>
     </SubsystemShape>
-    <useCaseDependencyConnector edgePoints="[(7.625 : 1.29388013322584); (8.25 : 1.40358046629043)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black">
+    <useCaseDependencyConnector edgePoints="[(7.25 : 1.28071609325809); (8.25 : 1.40358046629043)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black">
       <dependencyMoniker Id="f3f8512e-2b9f-4ec5-b9b6-6913038641fb" />
       <relativeChildShapes />
       <nodes>
@@ -100,7 +100,7 @@
         </useCaseShape>
       </nestedChildShapes>
     </SubsystemShape>
-    <useCaseDependencyConnector edgePoints="[(6.03846153846154 : 1.5); (6.25 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <useCaseDependencyConnector edgePoints="[(5.57692307692308 : 1.5); (6 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
       <dependencyMoniker Id="c21dffce-9cc5-4a90-b31a-8c395ed82fca" />
       <relativeChildShapes />
       <nodes>
