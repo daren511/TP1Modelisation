@@ -1,0 +1,121 @@
+Description des cas d'utilisation 
+ 
+ID : Case 1
+
+Titre: Emprunter un livre 
+Brève description: Un client arrive à la caisse avec un/des livre(s) qu’il souhaite emprunter
+Acteurs: Commis (principal), Le client (secondaire) 
+ 
+Préconditions: 
+- La bibliothèque est ouverte 
+- Un commis y est présent 
+- Le livre est disponible 
+- Le client est membre de la bibliothèque
+- Le client, s’il est membre, n’a pas de retard actuel
+
+Postcondition :
+- Le prêt est enregistré dans la base de données.
+ 
+Enchaînement des opérations 
+
+ActeursSystème1. Le cas d'utilisation débute lorsqu'un 
+client arrive à la caisse avec un/des 
+livre(s) à emprunter. 
+2. Le caissier enregistre chaque livre.3. le terminal valide le numéro 
+d'identification de chaque livre. 
+Le terminal affiche la description
+de chaque livre4. après avoir enregistré tous les 
+articles, le caissier étampe les livres
+5. Le commis remet les livres au client6. Le client s’en va
+
+
+
+Scénarios alternatifs :
+
+A1: Le client n’est pas membre de la bibliothèque
+
+A2: Le client demande l'annulation de l’emprunt (mauvais document(s)) 
+- Le commis met les livres de côté pour les replacer plus tard, le client choisi un/d’autres livre(s) ou s’en va
+L'enchaînement de A2 démarre au point 2 ou au point 6 du scénario nominal
+
+
+
+
+
+
+
+
+
+
+
+
+ID : Case 2
+
+Titre: Retourner un livre 
+Brève description: Un client arrive à la caisse avec un/des livre(s) qu’il doit retourner
+Acteurs: Commis (principal), Le client (secondaire) 
+ 
+Préconditions: 
+- Le client est membre de la bibliothèque
+- Le client à un livre emprunté à la bibliothèque
+
+Postcondition : 
+Le retour est enregistré dans la base de données.
+L’état du livre est changé de « emprunté » à « présent »
+ 
+Enchaînement des opérations 
+
+ActeursSystème1. Le cas d'utilisation débute lorsqu'un client arrive avec un/des 
+livre(s) à retourner. 
+2. Le client remet le(s) livre(s)3. Le client s’en va4. Le commis enregistre les livres
+5. le terminal valide le numéro 
+d'identification de chaque livre. 6. Le commis range les livres à leur place7. L’état du livre est mis-à-jour
+Scénarios alternatifs :
+ 
+A1: La bibliothèque est fermée
+L'enchaînement de A1 démarre au point 1 du scénario nominal 
+- Le client met le(s) livre(s) dans la chute de remise. 
+Le scénario reprend au point 3 et au point 4 lorsque la bibliothèque rouvre. 
+
+
+
+
+
+
+
+
+
+
+
+
+ID : Case 3
+
+Titre: Vérifier adhérent 
+Brève description : Vérifier si le client est membre de la bibliothèque
+Acteurs: Commis (principal), Le client (secondaire) 
+ 
+Préconditions: 
+- La bibliothèque est ouverte
+- Un commis est présent
+- Le client souhaite emprunter un livre
+
+Postcondition : 
+Le retour est enregistré dans la base de données.
+L’état du livre est changé de « emprunté » à « présent »
+ 
+Enchaînement des opérations 
+
+ActeursSystème1. Le cas d'utilisation débute lorsqu'un client arrive avec un/des 
+livre(s) à retourner. 
+2. Le client remet le(s) livre(s)3. Le client s’en va4. Le commis enregistre les livres
+5. le terminal valide le numéro 
+d'identification de chaque livre. 6. Le commis range les livres à leur place7. L’état du livre est mis-à-jour
+Scénarios alternatifs :
+ 
+A1: La bibliothèque est fermée
+L'enchaînement de A1 démarre au point 1 du scénario nominal 
+- Le client met le(s) livre(s) dans la chute de remise. 
+Le scénario reprend au point 3 et au point 4 lorsque la bibliothèque rouvre. 
+
+
+
