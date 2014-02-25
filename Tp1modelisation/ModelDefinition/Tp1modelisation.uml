@@ -864,17 +864,6 @@ de base(emprunts, gestion des documents(livres), Gestion des adhérents, Gestion
         isActiveClass="false">
         <ownedAttributesInternal>
           <property
-            Id="9587ef22-419b-4549-b008-18840b84495a"
-            name="NomLivre-Varchar2(40)"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="2b9eb077-a598-472e-b27a-65760ec2a0f7"
             name="DateEmprunt-Date"
             isLeaf="false"

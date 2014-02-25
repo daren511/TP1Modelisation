@@ -288,9 +288,6 @@
       <class Id="ed918eb5-3b06-4d4f-85ac-7b76f90aa295" name="Prets" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b7b05094-5e5e-4c6b-9241-0c91235829f3" />
         <ownedAttributesInternal>
-          <property Id="788a994f-baab-42a8-b20b-da0f3bc5d58f" name="NomLivre-Varchar2(40)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9587ef22-419b-4549-b008-18840b84495a" />
-          </property>
           <property Id="19a012df-209d-49a5-a291-b9623dadd69a" name="DateEmprunt-Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="2b9eb077-a598-472e-b27a-65760ec2a0f7" />
           </property>
