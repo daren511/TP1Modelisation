@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="814f1908-3fa3-4dea-bf30-0ad70ba661ba"
   name="Tp1modelisation" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -311,6 +311,603 @@ de base(emprunts, gestion des documents(livres), Gestion des adhérents, Gestion
         Id="153107ca-093f-4582-b041-9940ca221e4c"
         LastKnownName="Module Principal : Gestion Livres / Adhérents "
         LastKnownLocation="Package1_0903.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5b26a226-ce17-4ac2-9d75-02976d1558e9"
+        name="Documents"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="363ca7a3-03b0-4f3f-9b87-5884ed85ddfc"
+            name="Titre-Varchar2(40)"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2df0294a-d7f9-4334-adfb-d2a6140beb3c"
+            name="Numero -Number"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ae4a860c-5b0f-4cd3-8399-3f4a667d09ad"
+            name="Consulter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4fe84e51-d882-43af-912a-f5b7e475668c"
+        name="Jounaux"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="512c109e-60b1-4c10-a860-5c75352705ee"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5b26a226-ce17-4ac2-9d75-02976d1558e9"
+              LastKnownName="Documents"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c47f77aa-db0f-4f98-b7e1-759df0928547"
+            name="Periodicite-Varchar2(40)"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d90d4c0d-0479-4fdb-b6ec-e386f3db177b"
+            name="DateParution -Date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="57af14b5-4011-4d6b-a547-15a2763f2799"
+        name="Volumes"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7c487031-9e35-4de4-ac28-11a377f0455e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5b26a226-ce17-4ac2-9d75-02976d1558e9"
+              LastKnownName="Documents"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="00ce24cb-eee6-4f2b-8aa5-811275e84c97"
+            name="Auteur -Varchar2(40)"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="64a5e3ef-0600-4b09-8522-ccce65e45135"
+        name="Dictionnaire"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d1b342f4-def0-43d5-b439-ec5fa9719610"
+            isSubstitutable="false">
+            <classMoniker
+              Id="57af14b5-4011-4d6b-a547-15a2763f2799"
+              LastKnownName="Volumes"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="521a7a77-ecff-4a76-a3fb-cf95a0d433be"
+        name="BD"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="8ea9b1a4-c41a-4051-954b-c6935444116e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="57af14b5-4011-4d6b-a547-15a2763f2799"
+              LastKnownName="Volumes"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="df71518d-ed9d-4e0f-968b-932c91cb8f64"
+            name="Nom Dessinateur-Varchar2(40)"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2c17faa0-f524-45ae-b2ea-7acdac9dba7a"
+        name="Livres"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4341cfb0-e558-4f37-84af-463121d684f7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="57af14b5-4011-4d6b-a547-15a2763f2799"
+              LastKnownName="Volumes"
+              LastKnownLocation="Tp1modelisation.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="35d70dd8-a9ab-49f4-9aba-fe5a9e861684"
+            isDerived="false"
+            sourceEndRoleName="Livres"
+            targetEndRoleName="Prets"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b7b05094-5e5e-4c6b-9241-0c91235829f3"
+              LastKnownName="Prets"
+              LastKnownLocation="Tp1modelisation.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="45da4866-4c6b-4735-812e-4c77c3271eed"
+                  name="Livres"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dc0e9596-6c8d-47df-a18e-0360bfdb907f"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1df61a52-0ffa-423f-a461-f81274ec3d08"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a6301d1-59f6-4422-baa0-847f7cc76941"
+                  name="Prets"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1d7c37d4-61d7-4ede-b847-3a100c465a39"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f6cf67cd-8b5b-42c0-9c46-51c297be5223"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="fac52c15-3759-4ace-8116-78a75db7e117"
+            name="Preter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6fb7f5db-9b95-4c9c-9d58-135f97d18441"
+        name="Bibliothèque"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="a28d249e-4a32-4165-931f-896b5180a3a6"
+            isDerived="false"
+            sourceEndRoleName="Bibliothèque"
+            targetEndRoleName="Documents"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5b26a226-ce17-4ac2-9d75-02976d1558e9"
+              LastKnownName="Documents"
+              LastKnownLocation="Tp1modelisation.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2b1d740-9937-4d46-8c43-41a93f95049a"
+                  name="Bibliothèque"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="020760cb-ff4b-450d-814c-7ac916abc183"
+                  name="Documents"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b7494ffe-7319-493f-ac8d-998d21492151"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5606267b-8376-4366-92df-0b8d17b284bf"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="71bfd498-4c23-4a21-bd62-9900ac32a82a"
+            name="Creer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="58b53185-0c0a-4381-ab75-4b608048d29a"
+            name="Modifier"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e9e95593-17e6-43b7-8878-5708c0069a09"
+            name="Supprimer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="62f3a218-0ad1-4911-b149-cb7505977558"
+        name="Adhérent"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="93aaa94d-4958-48a6-85f4-45a8fb06b151"
+            isDerived="false"
+            sourceEndRoleName="Adhérent"
+            targetEndRoleName="Bibliothèque"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6fb7f5db-9b95-4c9c-9d58-135f97d18441"
+              LastKnownName="Bibliothèque"
+              LastKnownLocation="Tp1modelisation.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e8902e25-f698-490a-85a1-36439bdf65ed"
+                  name="Adhérent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8a52b25b-731d-448d-a746-e3f9d7766809"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="98881ac1-deb7-4cce-8712-f204ee0dccbd"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fd3ef16-841a-434f-81cc-c9fb72b2329d"
+                  name="Bibliothèque"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0c6e6d3d-bdd7-47ef-a291-c355d2ef1edc"
+            isDerived="false"
+            sourceEndRoleName="Adhérent"
+            targetEndRoleName="Prets"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b7b05094-5e5e-4c6b-9241-0c91235829f3"
+              LastKnownName="Prets"
+              LastKnownLocation="Tp1modelisation.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ee6dc0c-f40c-4446-8960-1877323b7e98"
+                  name="Adhérent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c75e4e2a-c83d-4bb5-a6a4-c148f41433ac"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="763bc03d-f411-4a82-9bd3-8932e4ff6cd0"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83acfaa5-1239-4e7f-8e63-f217fe17399a"
+                  name="Prets"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="abca2389-9069-4c7b-b06b-4c029db20ed0"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b35e87bc-8a0c-4064-a9a9-1702d4585491"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="dcb7ca30-0395-4f20-8575-9c2a55c15c36"
+            name="Nom -Varchar2(40)"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b3ddfa72-aef8-4ac2-8569-f0826dde184a"
+            name="Prenom -Varchar2(40)"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="21bea975-6197-4c95-8a68-1cafe33ba0b1"
+            name="Numero-Number"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="923a2747-3f0b-4ccb-b460-316bdf485656"
+            name="CreerAdherent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="00a54560-ba01-4e4c-8e71-70e875f56530"
+            name="ModifierAdherent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a18c28f6-07ad-48ef-a3ac-50c381d06923"
+            name="SupprimerAdherent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b7b05094-5e5e-4c6b-9241-0c91235829f3"
+        name="Prets"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="9587ef22-419b-4549-b008-18840b84495a"
+            name="NomLivre-Varchar2(40)"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2b9eb077-a598-472e-b27a-65760ec2a0f7"
+            name="DateEmprunt-Date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f8c53991-2e09-412b-97e6-a921259af2a9"
+            name="DateRetour-Date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="31283e54-9ac5-4475-88e9-796fbe47360f"
+            name="Retourner"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
