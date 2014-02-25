@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="081562d8-effb-48b7-8a07-c941c57aa5a5" name="UMLClassDiagram1" linkedPackageId="4b5d4761-d27a-4e59-92f5-9ab3b6aa218d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="081562d8-effb-48b7-8a07-c941c57aa5a5" name="UMLClassDiagram1" linkedPackageId="4b5d4761-d27a-4e59-92f5-9ab3b6aa218d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="947ab30a-9a9f-4cad-897e-62a5baf131c9">
       <elementDefinition Id="9116a3c1-cb11-4a8e-a9de-c2b454dc52f8" />
@@ -20,20 +20,6 @@ de base(emprunts, gestion des documents(livres), Gestion des adhérents, Gestion
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="4ee51661-6e5e-46c6-b1f1-29d560d1d73d">
-      <profileInstance Id="a1f239e4-9d3f-4752-8f0f-d0d9c6abb4e4" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="f4032b7a-c0cd-48f1-ac29-4096680138af">
-      <profileInstance Id="e93d6c7d-9ac6-45f8-8072-dd5a8650946f" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="2b39c66f-281b-4b72-9f80-09e203f5e3a2" name="Module Internet : Consultation / Réservations">
@@ -48,5 +34,19 @@ de base(emprunts, gestion des documents(livres), Gestion des adhérents, Gestion
   </packagedElements>
   <package Id="4b5d4761-d27a-4e59-92f5-9ab3b6aa218d" name="Tp1modelisation">
     <elementDefinition Id="814f1908-3fa3-4dea-bf30-0ad70ba661ba" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4ee51661-6e5e-46c6-b1f1-29d560d1d73d">
+        <profileInstance Id="a1f239e4-9d3f-4752-8f0f-d0d9c6abb4e4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f4032b7a-c0cd-48f1-ac29-4096680138af">
+        <profileInstance Id="e93d6c7d-9ac6-45f8-8072-dd5a8650946f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
