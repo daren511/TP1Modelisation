@@ -1,8 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="814f1908-3fa3-4dea-bf30-0ad70ba661ba"
   name="Tp1modelisation" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="9116a3c1-cb11-4a8e-a9de-c2b454dc52f8">
+      <body>Ce module comprends toute les 
+fonctionalites pour la section internet du projet (Gestion des réservation et usager, ainsi que la consultation du registre) 
+</body>
+      <annotatedElements>
+        <packageMoniker
+          Id="f5292997-e4ac-4438-b26c-e6de314f9e61"
+          LastKnownName="Module Internet : Consultation / Réservations"
+          LastKnownLocation="Package_0903.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="925b9bb3-ab9f-4e97-a162-6505e4322a19">
+      <body>Ce module comprend toute les fonctionalités
+de base(emprunts, gestion des documents(livres), Gestion des adhérents, Gestion des retours)
+</body>
+      <annotatedElements>
+        <packageMoniker
+          Id="153107ca-093f-4582-b041-9940ca221e4c"
+          LastKnownName="Module Principal : Gestion Livres / Adhérents "
+          LastKnownLocation="Package1_0903.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -273,6 +299,18 @@
         name="Établir liste des retards"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f5292997-e4ac-4438-b26c-e6de314f9e61"
+        LastKnownName="Module Internet : Consultation / Réservations"
+        LastKnownLocation="Package_0903.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="153107ca-093f-4582-b041-9940ca221e4c"
+        LastKnownName="Module Principal : Gestion Livres / Adhérents "
+        LastKnownLocation="Package1_0903.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

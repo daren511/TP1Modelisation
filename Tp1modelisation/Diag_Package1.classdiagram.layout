@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram1">
+  <logicalClassDesignerModelMoniker Id="fd82ee20-bda3-4b0b-94d7-77e8fd2e34f9" />
+  <nestedChildShapes>
+    <commentShape Id="54ea3a74-1ef3-42bc-a058-5706ab61566c" absoluteBounds="7.125, 0.875, 2.5, 1.25" customColor="251, 247, 200">
+      <commentMoniker Id="b10a7a28-42fc-4a6f-a747-1565060022f3" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="6d71f379-e18b-4fb4-b131-aa5b41932924" absoluteBounds="7.125, 2.625, 2.625, 1.375" customColor="251, 247, 200">
+      <commentMoniker Id="f3bbd30e-cd6d-4f70-8297-4373d88a9086" />
+      <relativeChildShapes />
+    </commentShape>
+    <packageShape Id="c8ec6d6e-022e-40ee-9875-f9e8aa90d77f" absoluteBounds="1.125, 1.375, 5.375, 0.625" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="51491c4d-08ea-4e51-9c0a-b1138fdb4bee" LastKnownName="Module Internet : Consultation / Réservations" />
+    </packageShape>
+    <commentConnector edgePoints="[(7.125 : 1.6875); (6.5 : 1.6875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+      <relativeChildShapes />
+      <nodes>
+        <commentShapeMoniker Id="54ea3a74-1ef3-42bc-a058-5706ab61566c" />
+        <packageShapeMoniker Id="c8ec6d6e-022e-40ee-9875-f9e8aa90d77f" />
+      </nodes>
+    </commentConnector>
+    <packageShape Id="5f360028-1d91-4cb1-ab81-3f6f82009f03" absoluteBounds="1.125, 2.125, 5.375, 0.625" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="cad06b8e-b0de-45b1-9eec-b4a42ea9dfb6" LastKnownName="Module Principal : Gestion Livres / Adhérents " />
+    </packageShape>
+    <commentConnector edgePoints="[(7.125 : 3.3125); (6.5 : 2.56137892376682)]" fixedFrom="NotFixed" fixedTo="Caller" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+      <relativeChildShapes />
+      <nodes>
+        <commentShapeMoniker Id="6d71f379-e18b-4fb4-b131-aa5b41932924" />
+        <packageShapeMoniker Id="5f360028-1d91-4cb1-ab81-3f6f82009f03" />
+      </nodes>
+    </commentConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

@@ -1,25 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9c226b9e-73e8-4217-91a2-64aa64ae6530" name="Diagram_uml" linkedPackageId="34f841d0-d4ac-4649-bc0b-ad1acfb1c7e7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="27356823-810d-4ce5-80c7-93203e060b7d">
-      <profileInstance Id="af203abf-6a1e-465c-b50b-37d8acd0e214" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="bb4c2269-73b8-4383-84a8-75157bf38819">
-      <profileInstance Id="cc511e00-f060-48c2-bb77-5a421b9e20ea" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="9c226b9e-73e8-4217-91a2-64aa64ae6530" name="Diagram_uml" linkedPackageId="34f841d0-d4ac-4649-bc0b-ad1acfb1c7e7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
-    <useCaseModelRootHasTypes>
-      <actor Id="65d77a39-852b-4a44-b3d2-7bd9c43567e4" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="33277335-5bea-43ad-b893-b9adf3b46e55" />
-      </actor>
-    </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <actor Id="a2423a33-66ca-4af7-bca2-b82a19a57000" name="Client" isAbstract="false" isLeaf="false">
         <elementDefinition Id="90707a5a-8744-4428-9d94-72c65b1ae70c" />
@@ -167,5 +148,19 @@
   </packagedElements>
   <package Id="34f841d0-d4ac-4649-bc0b-ad1acfb1c7e7" name="Tp1modelisation">
     <elementDefinition Id="814f1908-3fa3-4dea-bf30-0ad70ba661ba" />
+    <profileInstances>
+      <packageHasProfileInstances Id="27356823-810d-4ce5-80c7-93203e060b7d">
+        <profileInstance Id="af203abf-6a1e-465c-b50b-37d8acd0e214" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="bb4c2269-73b8-4383-84a8-75157bf38819">
+        <profileInstance Id="cc511e00-f060-48c2-bb77-5a421b9e20ea" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
